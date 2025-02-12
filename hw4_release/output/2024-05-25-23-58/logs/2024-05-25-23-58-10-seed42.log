@@ -1,0 +1,17 @@
+[INFO 2024-05-25 23:58:10,347]: Config: Config(train_data_path='./data/train.json', valid_data_path='./data/valid.json', name_len=6, tokens_len=50, desc_len=30, pad_token_id=0, n_tokens=10000, vocab_name='./data/vocab.name.json', vocab_tokens='./data/vocab.tokens.json', vocab_desc='./data/vocab.comment.json', gpu_id=0, run_name=None, primary_metric='ACC@10', seed=42, train_batch_size=64, eval_batch_size=200, n_epochs=15, learning_rate=0.001, sim_loss_margin=0.05, embedding_dim=200, mlp_hidden_dim=200, fusion_hidden_dim=600, lstm_hidden_dim=300, lstm_n_layers=1, token_activation='relu', fusion_activation='sigmoid', dropout=None)
+[INFO 2024-05-25 23:58:11,421]: Loading data.
+[INFO 2024-05-25 23:58:12,545]: Train set size: 100,000
+[INFO 2024-05-25 23:58:12,545]: Valid set size: 10,000
+[INFO 2024-05-25 23:58:12,545]: Constructing model.
+[INFO 2024-05-25 23:58:15,089]: Number of trainable parameters: 12,455,000
+[INFO 2024-05-25 23:58:15,089]: Beginning training loop.
+[INFO 2024-05-25 23:59:17,436]: TRAIN   0 | loss: 0.0165 | pos_sim: 0.5356 | neg_sim: 0.4430
+[INFO 2024-05-25 23:59:19,352]: EVAL    0 | ACC@10: 0.2806 | MRR: 0.1122 | NDCG@10: 0.1514
+[INFO 2024-05-25 23:59:19,360]: New best at epoch   0: ACC@10: 0.2806
+[INFO 2024-05-25 23:59:19,419]: Saved to ./output/2024-05-25-23-58/models/model_best.pt
+[INFO 2024-05-26 00:00:21,638]: TRAIN   1 | loss: 0.0056 | pos_sim: 0.5374 | neg_sim: 0.3903
+[INFO 2024-05-26 00:00:23,436]: EVAL    1 | ACC@10: 0.3862 | MRR: 0.1765 | NDCG@10: 0.2256
+[INFO 2024-05-26 00:00:23,442]: New best at epoch   1: ACC@10: 0.3862
+[INFO 2024-05-26 00:00:23,526]: Saved to ./output/2024-05-25-23-58/models/model_best.pt
+[INFO 2024-05-26 00:00:56,101]: Training interrupted by user.
+[INFO 2024-05-26 00:00:56,101]: Running final evaluation.

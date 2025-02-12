@@ -1,0 +1,59 @@
+[INFO 2024-05-25 23:28:00,804]: Config: Config(train_data_path='./data/train.json', valid_data_path='./data/valid.json', name_len=6, tokens_len=50, desc_len=30, pad_token_id=0, n_tokens=10000, vocab_name='./data/vocab.name.json', vocab_tokens='./data/vocab.tokens.json', vocab_desc='./data/vocab.comment.json', gpu_id=0, run_name=None, primary_metric='ACC@10', seed=42, train_batch_size=64, eval_batch_size=200, n_epochs=15, learning_rate=0.001, sim_loss_margin=0.05, embedding_dim=100, mlp_hidden_dim=200, fusion_hidden_dim=400, lstm_hidden_dim=200, lstm_n_layers=1, token_activation='tanh', fusion_activation='tanh', dropout=None)
+[INFO 2024-05-25 23:28:01,973]: Loading data.
+[INFO 2024-05-25 23:28:03,567]: Train set size: 100,000
+[INFO 2024-05-25 23:28:03,567]: Valid set size: 10,000
+[INFO 2024-05-25 23:28:03,571]: Constructing model.
+[INFO 2024-05-25 23:28:07,524]: Number of trainable parameters: 5,810,000
+[INFO 2024-05-25 23:28:07,524]: Beginning training loop.
+[INFO 2024-05-25 23:30:44,575]: TRAIN   0 | loss: 0.0167 | pos_sim: 0.1926 | neg_sim: 0.0956
+[INFO 2024-05-25 23:30:48,532]: EVAL    0 | ACC@10: 0.2943 | MRR: 0.1291 | NDCG@10: 0.1678
+[INFO 2024-05-25 23:30:48,536]: New best at epoch   0: ACC@10: 0.2943
+[INFO 2024-05-25 23:30:48,596]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:33:15,528]: TRAIN   1 | loss: 0.0059 | pos_sim: 0.2322 | neg_sim: 0.0839
+[INFO 2024-05-25 23:33:19,543]: EVAL    1 | ACC@10: 0.3643 | MRR: 0.1660 | NDCG@10: 0.2125
+[INFO 2024-05-25 23:33:19,551]: New best at epoch   1: ACC@10: 0.3643
+[INFO 2024-05-25 23:33:19,619]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:35:47,353]: TRAIN   2 | loss: 0.0028 | pos_sim: 0.2305 | neg_sim: 0.0584
+[INFO 2024-05-25 23:35:51,112]: EVAL    2 | ACC@10: 0.3942 | MRR: 0.1859 | NDCG@10: 0.2349
+[INFO 2024-05-25 23:35:51,116]: New best at epoch   2: ACC@10: 0.3942
+[INFO 2024-05-25 23:35:51,168]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:38:09,596]: TRAIN   3 | loss: 0.0016 | pos_sim: 0.2321 | neg_sim: 0.0458
+[INFO 2024-05-25 23:38:13,378]: EVAL    3 | ACC@10: 0.4186 | MRR: 0.2033 | NDCG@10: 0.2540
+[INFO 2024-05-25 23:38:13,386]: New best at epoch   3: ACC@10: 0.4186
+[INFO 2024-05-25 23:38:13,446]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:40:34,019]: TRAIN   4 | loss: 0.0011 | pos_sim: 0.2270 | neg_sim: 0.0323
+[INFO 2024-05-25 23:40:37,958]: EVAL    4 | ACC@10: 0.4299 | MRR: 0.2106 | NDCG@10: 0.2623
+[INFO 2024-05-25 23:40:37,966]: New best at epoch   4: ACC@10: 0.4299
+[INFO 2024-05-25 23:40:38,042]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:44:05,474]: TRAIN   5 | loss: 0.0009 | pos_sim: 0.2265 | neg_sim: 0.0261
+[INFO 2024-05-25 23:44:07,023]: EVAL    5 | ACC@10: 0.4422 | MRR: 0.2216 | NDCG@10: 0.2736
+[INFO 2024-05-25 23:44:07,028]: New best at epoch   5: ACC@10: 0.4422
+[INFO 2024-05-25 23:44:07,061]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:44:55,203]: TRAIN   6 | loss: 0.0007 | pos_sim: 0.2310 | neg_sim: 0.0228
+[INFO 2024-05-25 23:44:56,741]: EVAL    6 | ACC@10: 0.4695 | MRR: 0.2332 | NDCG@10: 0.2889
+[INFO 2024-05-25 23:44:56,744]: New best at epoch   6: ACC@10: 0.4695
+[INFO 2024-05-25 23:44:56,779]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:45:45,502]: TRAIN   7 | loss: 0.0006 | pos_sim: 0.2194 | neg_sim: 0.0096
+[INFO 2024-05-25 23:45:47,046]: EVAL    7 | ACC@10: 0.4527 | MRR: 0.2252 | NDCG@10: 0.2789
+[INFO 2024-05-25 23:46:38,135]: TRAIN   8 | loss: 0.0005 | pos_sim: 0.2242 | neg_sim: 0.0117
+[INFO 2024-05-25 23:46:39,724]: EVAL    8 | ACC@10: 0.4598 | MRR: 0.2344 | NDCG@10: 0.2876
+[INFO 2024-05-25 23:47:30,016]: TRAIN   9 | loss: 0.0005 | pos_sim: 0.2231 | neg_sim: 0.0084
+[INFO 2024-05-25 23:47:31,588]: EVAL    9 | ACC@10: 0.4662 | MRR: 0.2362 | NDCG@10: 0.2905
+[INFO 2024-05-25 23:48:20,559]: TRAIN  10 | loss: 0.0004 | pos_sim: 0.2220 | neg_sim: 0.0047
+[INFO 2024-05-25 23:48:22,136]: EVAL   10 | ACC@10: 0.4717 | MRR: 0.2441 | NDCG@10: 0.2979
+[INFO 2024-05-25 23:48:22,140]: New best at epoch  10: ACC@10: 0.4717
+[INFO 2024-05-25 23:48:22,171]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:49:11,408]: TRAIN  11 | loss: 0.0004 | pos_sim: 0.2141 | neg_sim: -0.0038
+[INFO 2024-05-25 23:49:12,976]: EVAL   11 | ACC@10: 0.4650 | MRR: 0.2375 | NDCG@10: 0.2912
+[INFO 2024-05-25 23:50:02,000]: TRAIN  12 | loss: 0.0003 | pos_sim: 0.2137 | neg_sim: -0.0062
+[INFO 2024-05-25 23:50:03,601]: EVAL   12 | ACC@10: 0.4674 | MRR: 0.2408 | NDCG@10: 0.2943
+[INFO 2024-05-25 23:50:52,946]: TRAIN  13 | loss: 0.0003 | pos_sim: 0.2173 | neg_sim: -0.0043
+[INFO 2024-05-25 23:50:54,540]: EVAL   13 | ACC@10: 0.4891 | MRR: 0.2538 | NDCG@10: 0.3094
+[INFO 2024-05-25 23:50:54,544]: New best at epoch  13: ACC@10: 0.4891
+[INFO 2024-05-25 23:50:54,580]: Saved to ./output/2024-05-25-23-28/models/model_best.pt
+[INFO 2024-05-25 23:51:44,284]: TRAIN  14 | loss: 0.0003 | pos_sim: 0.2155 | neg_sim: -0.0067
+[INFO 2024-05-25 23:51:45,817]: EVAL   14 | ACC@10: 0.4868 | MRR: 0.2486 | NDCG@10: 0.3050
+[INFO 2024-05-25 23:51:45,822]: Running final evaluation.
+[INFO 2024-05-25 23:51:47,550]: EVAL  100 | ACC@10: 0.4891 | MRR: 0.2538 | NDCG@10: 0.3094
+[INFO 2024-05-25 23:51:47,555]: Number of trainable parameters: 5,810,000
+[INFO 2024-05-25 23:51:47,555]: Final eval result: {"ACC@10": 0.48910000920295715, "MRR": 0.25381234288215637, "NDCG@10": 0.3094292879104614}
